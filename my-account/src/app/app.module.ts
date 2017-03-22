@@ -8,6 +8,7 @@ import { AccountComponent } from './account/account.component';
 import { HeaderComponent } from './header/header.component';
 import { DetailsComponent } from './account/details/details.component';
 import { DetailsService } from './account/details/details.service';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DetailsService } from './account/details/details.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CurrencyMaskModule
   ],
   providers: [DetailsService],
   bootstrap: [AppComponent]

@@ -9,10 +9,11 @@ import { DetailsService } from './details/details.service';
 })
 export class AccountComponent {
 
-  details: any[] = [];
-  detailsService: DetailsService;
-  typeOperation: string = '';
-  value: number;
+  public details: any[] = [];
+  public detailsService: DetailsService;
+  public typeOperation: string = '';
+  public value: number;
+  public mask: Array<string | RegExp>;
 
   constructor(private _detailsService: DetailsService) {}
 
