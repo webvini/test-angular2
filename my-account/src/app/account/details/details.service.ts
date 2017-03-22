@@ -4,14 +4,13 @@ import { Injectable } from '@angular/core';
 export class DetailsService {
   
   private _details: any[] = [
-    { type: 'Deposito', value: 100 },
-    { type: 'Deposito', value: 150 },
-    { type: 'Saque', value: 75 },
-    { type: 'Deposito', value: 200 }
+    { type: 'Deposito', value: 'R$ 100,00' },
+    { type: 'Deposito', value: 'R$ 150,00' },
+    { type: 'Saque', value: 'R$ 75,00' },
+    { type: 'Deposito', value: 'R$ 200,00' }
   ];
 
   getDetails() {
-    console.log(this._details.length);
     return this._details;
   }
 

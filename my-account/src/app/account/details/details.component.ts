@@ -9,10 +9,8 @@ import { DetailsService } from './details.service';
 })
 export class DetailsComponent implements OnInit {
 
-  details: any[] = [];
-  detailsService: DetailsService;
-  i: number = 0;
-  amount: number = 0;
+  public details: any[] = [];
+  public detailsService: DetailsService;
 
   constructor(private _detailsService: DetailsService) {}
 
@@ -25,10 +23,6 @@ export class DetailsComponent implements OnInit {
   }
 
   getAmount() {
-
-    // for( this.i; this.i <= this.details.length; this.i++ ) {
-    //   console.log( this.details[this.i].value );
-    // }
 
   }
 

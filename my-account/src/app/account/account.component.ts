@@ -13,7 +13,6 @@ export class AccountComponent {
   public detailsService: DetailsService;
   public typeOperation: string = '';
   public value: number;
-  public mask: Array<string | RegExp>;
 
   constructor(private _detailsService: DetailsService) {}
 
