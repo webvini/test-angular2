@@ -20,7 +20,7 @@ export class DetailsService {
   }
 
   removeDetail(row: any) {
-    this._details.splice(this._details.indexOf(row));
+    this._details.splice(row, 1);
   }
 
 }

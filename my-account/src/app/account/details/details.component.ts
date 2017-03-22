@@ -12,14 +12,12 @@ export class DetailsComponent implements OnInit {
   details: any[] = [];
   detailsService: DetailsService;
   i: number = 0;
-  detailsLength: number = this.details.length;
   amount: number = 0;
 
   constructor(private _detailsService: DetailsService) {}
 
   ngOnInit() {
     this.details = this._detailsService.getDetails();
-    this.getAmount();
   }
 
   removeRow(row: any) {
