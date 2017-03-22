@@ -1,0 +1,16 @@
+.type-opertion {
+  background-color: #F2F2F2;
+  padding: 15px 0;
+}
+
+.what-value {
+  margin: 5% 0;
+
+  .material-icons {
+    color: #DFDFDF;
+
+    &:not(.disabled) {
+      color: #26a69a;
+    }
+  }
+}
