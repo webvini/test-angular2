@@ -19,6 +19,8 @@ export class AccountComponent {
 
   onSetDetail(value: any) {
     this._detailsService.setDetail(value, this.typeOperation);
+    this.typeOperation = null;
+    this.value = null;
   }
 
 }
