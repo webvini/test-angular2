@@ -5,7 +5,7 @@
     <table class="responsive-table">
       <thead>
         <tr>
-          <th data-field="id">Tipo</th>
+          <th data-field="id">Tipo de operação</th>
           <th data-field="name">Valor</th>
           <th data-field="remove"></th>
         </tr>
@@ -13,8 +13,8 @@
       <tbody>
         <tr *ngFor="let detail of details; let i = index">
           <td>{{ detail.type }}</td>
-          <td>{{ detail.value }}</td>
-          <td><a href="javascript:;" (click)="removeRow(i)">Remover</a></td>
+          <td [class]="detail.type | lowercase">{{ detail.value }}</td>
+          <td><a href="javascript:;" (click)="removeRow(i)"><i class="material-icons remove-icon">delete_forever</i></a></td>
         </tr>
       </tbody>
     </table>

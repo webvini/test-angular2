@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class DetailsService {
-  
+
   private _details: any[] = [
-    { type: 'Deposito', value: 'R$ 100,00' },
-    { type: 'Deposito', value: 'R$ 150,00' },
+    { type: 'Depósito', value: 'R$ 100,00' },
+    { type: 'Depósito', value: 'R$ 150,00' },
     { type: 'Saque', value: 'R$ 75,00' },
-    { type: 'Deposito', value: 'R$ 200,00' }
+    { type: 'Depósito', value: 'R$ 200,00' }
   ];
 
   getDetails() {

@@ -12,8 +12,8 @@
         </div>
 
         <div class="col s6 l2">
-          <input type="radio" class="with-gap" [(ngModel)]="typeOperation" name="type" id="deposito" value="Deposito" />
-          <label for="deposito">Deposito</label>
+          <input type="radio" class="with-gap" [(ngModel)]="typeOperation" name="type" id="deposito" value="Depósito" />
+          <label for="deposito">Depósito</label>
         </div>
       </div>
     </div>
@@ -23,11 +23,11 @@
   <!-- begin - value -->
   <div class="what-value">
     <div class="container">
-      <h5>Valor <span *ngIf="typeOperation">do</span> {{ typeOperation }}</h5>
+      <h5>Valor <span *ngIf="typeOperation">do</span> {{ typeOperation | lowercase }}</h5>
 
       <div class="row">
         <div class="input-field col s12 l6">
-          <i class="material-icons prefix" [class.disabled]='!typeOperation'>swap_vertical_circle</i>
+          <i class="material-icons prefix" [class.disabled]='!typeOperation'>monetization_on</i>
           <input
               id="icon_prefix"
               type="text" 

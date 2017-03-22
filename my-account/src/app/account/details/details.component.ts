@@ -11,6 +11,7 @@ export class DetailsComponent implements OnInit {
 
   public details: any[] = [];
   public detailsService: DetailsService;
+  public amount: any;
 
   constructor(private _detailsService: DetailsService) {}
 
@@ -20,10 +21,6 @@ export class DetailsComponent implements OnInit {
 
   removeRow(row: any) {
     this._detailsService.removeDetail(row);
-  }
-
-  getAmount() {
-
   }
 
 }

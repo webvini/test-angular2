@@ -1,6 +1,17 @@
 .latest-details {
   background-color: #F2F2F2;
   padding: 15px 0;
+
+  .saque {
+    color: #F44336;
+  }
+
+  .remove-icon {
+    color: darken(#F44336, 25%);
+    &:hover {
+      color: #F44336;
+    }
+  }
 }
 
 .amount-wrap {
